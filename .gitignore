@@ -1,0 +1,4 @@
+*.swp
+github-data
+repos/**
+_obj/**

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<cvrfdoc xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1" xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.icasi.org/CVRF/schema/cvrf/1.1 http://www.icasi.org/CVRF/schema/cvrf/1.1/cvrf.xsd">
+<DocumentTitle xml:lang="en">CVE Output in CVRF 1.1: 20141211</DocumentTitle>
+<DocumentType>CVE List</DocumentType>
+<DocumentPublisher Type="Other">
+<ContactDetails>cve@mitre.org</ContactDetails>
+<IssuingAuthority>The MITRE Corporation</IssuingAuthority>
+</DocumentPublisher>
+<DocumentTracking>
+<Identification><ID>20141211-060850</ID></Identification>
+<Status>Interim</Status>
+<Version>2014.12.11.6</Version>
+<RevisionHistory>
+<Revision>
+<Number>1</Number>
+<Date>2014-12-11T06:08:50</Date>
+<Description>initial public release</Description></Revision>
+</RevisionHistory>
+<InitialReleaseDate>2014-12-11T06:08:50</InitialReleaseDate>
+<CurrentReleaseDate>2014-12-11T06:08:50</CurrentReleaseDate>
+<Generator><Engine>MITRE Custom CVE-to-CVRF Converter 1.3</Engine></Generator>
+</DocumentTracking>
+<DocumentNotes>
+<Note Type="General" Ordinal="1" Title="CVE List" Audience="All">This is a list of CVE Identifiers as published by MITRE.</Note>
+<Note Type="General" Ordinal="2" Title="License" Audience="All">The MITRE Corporation (MITRE) hereby grants you a non-exclusive,
+royalty-free license to use Common Vulnerabilities and Exposures (CVE
+(R)) for research, development, and commercial purposes. Any copy you
+make for such purposes is authorized provided that you reproduce
+MITRE&apos;s copyright designation and this license in any such copy.</Note>
+<Note Type="General" Ordinal="3" Title="Disclaimers" Audience="All">ALL DOCUMENTS AND THE INFORMATION CONTAINED THEREIN ARE PROVIDED ON
+AN &quot;AS IS&quot; BASIS AND THE CONTRIBUTOR, THE ORGANIZATION HE/SHE
+REPRESENTS OR IS SPONSORED BY (IF ANY), THE MITRE CORPORATION, ITS
+BOARD OF TRUSTEES, OFFICERS, AGENTS, AND EMPLOYEES, DISCLAIM ALL
+WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY
+WARRANTY THAT THE USE OF THE INFORMATION THEREIN WILL NOT INFRINGE ANY
+RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A
+PARTICULAR PURPOSE.</Note>
+</DocumentNotes>
+<Vulnerability xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1" Ordinal="70627">
+<Title>CVE-2014-3568</Title>
+<Notes><Note Type="Description" Ordinal="1">OpenSSL before 0.9.8zc, 1.0.0 before 1.0.0o, and 1.0.1 before 1.0.1j
+does not properly enforce the no-ssl3 build option, which allows
+remote attackers to bypass intended access restrictions via an SSL 3.0
+handshake, related to s23_clnt.c and s23_srvr.c.
+</Note>
+<Note Type="Other" Ordinal="2" Title="Published">2014-10-18</Note>
+<Note Type="Other" Ordinal="3" Title="Modified">2014-11-14</Note>
+</Notes>
+<CVE>CVE-2014-3568</CVE>
+	<References>
+	<Reference>
+		<URL>https://git.openssl.org/gitweb/?p=openssl.git;a=commit;h=26a59d9b46574e457870197dffa802871b4c8fc7</URL>
+		<Description>CONFIRM:https://git.openssl.org/gitweb/?p=openssl.git;a=commit;h=26a59d9b46574e457870197dffa802871b4c8fc7</Description>
+	</Reference>
+	<Reference>
+		<URL>https://www.openssl.org/news/secadv_20141015.txt</URL>
+		<Description>CONFIRM:https://www.openssl.org/news/secadv_20141015.txt</Description>
+	</Reference>
+	<Reference>
+		<URL>https://blogs.oracle.com/sunsecurity/entry/multiple_vulnerabilities_in_openssl6</URL>
+		<Description>CONFIRM:https://blogs.oracle.com/sunsecurity/entry/multiple_vulnerabilities_in_openssl6</Description>
+	</Reference>
+	<Reference>
+		<URL>http://www-01.ibm.com/support/docview.wss?uid=swg21686997</URL>
+		<Description>CONFIRM:http://www-01.ibm.com/support/docview.wss?uid=swg21686997</Description>
+	</Reference>
+	<Reference>
+		<URL>http://www.debian.org/security/2014/dsa-3053</URL>
+		<Description>DEBIAN:DSA-3053</Description>
+	</Reference>
+	<Reference>
+		<URL>http://marc.info/?l=bugtraq&amp;m=141477196830952&amp;w=2</URL>
+		<Description>HP:HPSBUX03162</Description>
+	</Reference>
+	<Reference>
+		<URL>http://marc.info/?l=bugtraq&amp;m=141477196830952&amp;w=2</URL>
+		<Description>HP:SSRT101767</Description>
+	</Reference>
+	<Reference>
+		<URL>ftp://ftp.netbsd.org/pub/NetBSD/security/advisories/NetBSD-SA2014-015.txt.asc</URL>
+		<Description>NETBSD:NetBSD-SA2014-015</Description>
+	</Reference>
+	<Reference>
+		<URL>http://lists.opensuse.org/opensuse-security-announce/2014-10/msg00008.html</URL>
+		<Description>SUSE:openSUSE-SU-2014:1331</Description>
+	</Reference>
+	<Reference>
+		<URL>http://lists.opensuse.org/opensuse-security-announce/2014-11/msg00001.html</URL>
+		<Description>SUSE:SUSE-SU-2014:1357</Description>
+	</Reference>
+	<Reference>
+		<URL>http://lists.opensuse.org/opensuse-security-announce/2014-11/msg00003.html</URL>
+		<Description>SUSE:SUSE-SU-2014:1361</Description>
+	</Reference>
+	<Reference>
+		<URL>http://www.securityfocus.com/bid/70585</URL>
+		<Description>BID:70585</Description>
+	</Reference>
+	<Reference>
+		<URL>http://www.securitytracker.com/id/1031053</URL>
+		<Description>SECTRACK:1031053</Description>
+	</Reference>
+	<Reference>
+		<URL>http://secunia.com/advisories/61130</URL>
+		<Description>SECUNIA:61130</Description>
+	</Reference>
+	<Reference>
+		<URL>http://secunia.com/advisories/61207</URL>
+		<Description>SECUNIA:61207</Description>
+	</Reference>
+	<Reference>
+		<URL>http://secunia.com/advisories/61819</URL>
+		<Description>SECUNIA:61819</Description>
+	</Reference>
+	<Reference>
+		<URL>http://secunia.com/advisories/62030</URL>
+		<Description>SECUNIA:62030</Description>
+	</Reference>
+	<Reference>
+		<URL>http://secunia.com/advisories/59627</URL>
+		<Description>SECUNIA:59627</Description>
+	</Reference>
+	<Reference>
+		<URL>http://secunia.com/advisories/61058</URL>
+		<Description>SECUNIA:61058</Description>
+	</Reference>
+	<Reference>
+		<URL>http://secunia.com/advisories/61073</URL>
+		<Description>SECUNIA:61073</Description>
+	</Reference>
+	<Reference>
+		<URL>http://secunia.com/advisories/61959</URL>
+		<Description>SECUNIA:61959</Description>
+	</Reference>
+	<Reference>
+		<URL>http://secunia.com/advisories/62070</URL>
+		<Description>SECUNIA:62070</Description>
+	</Reference>
+	<Reference>
+		<URL>http://secunia.com/advisories/62124</URL>
+		<Description>SECUNIA:62124</Description>
+	</Reference>
+	<Reference>
+		<URL>http://xforce.iss.net/xforce/xfdb/97037</URL>
+		<Description>XF:openssl-cve20143568-sec-bypass(97037)</Description>
+	</Reference>
+</References>
+</Vulnerability>
+</cvrfdoc>
